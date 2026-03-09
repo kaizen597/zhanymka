@@ -405,22 +405,23 @@ h2,
     }
 
     /* Reset specific grid positions for mobile */
-    .grid-3 .photo-wrapper:nth-child(1),
-    .grid-3 .photo-wrapper:nth-child(2),
-    .grid-3 .photo-wrapper.middle {
-        grid-row: auto;
-        grid-column: auto;
+    .story-block.grid-3 .grid-layout>.photo-wrapper:nth-child(1),
+    .story-block.grid-3 .grid-layout>.photo-wrapper:nth-child(2),
+    .story-block.grid-3 .grid-layout>.photo-wrapper.middle {
+        grid-row: auto !important;
+        grid-column: auto !important;
     }
 
-    .grid-3 .grid-layout {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
+    .story-block.grid-3 .grid-layout {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-rows: auto !important;
     }
 
-    .grid-3 .photo-wrapper.middle {
-        grid-column: 1 / 3;
+    .story-block.grid-3 .grid-layout>.photo-wrapper.middle {
+        grid-column: 1 / 3 !important;
         aspect-ratio: 16/9 !important;
-        max-height: 35vh;
+        max-height: 40vh !important;
     }
 
     .photo-wrapper {
