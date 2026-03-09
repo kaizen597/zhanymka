@@ -399,29 +399,26 @@ h2,
         gap: 10px;
     }
 
-    /* Fixed grid for multi-photo sections on mobile */
-    .grid-2 .grid-layout {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    /* Reset specific grid positions for mobile */
-    .story-block.grid-3 .grid-layout>.photo-wrapper:nth-child(1),
-    .story-block.grid-3 .grid-layout>.photo-wrapper:nth-child(2),
-    .story-block.grid-3 .grid-layout>.photo-wrapper.middle {
+    /* Reset specific grid positions for all multi-photo blocks on mobile */
+    .story-block.reveal .grid-layout>.photo-wrapper {
         grid-row: auto !important;
         grid-column: auto !important;
     }
 
-    .story-block.grid-3 .grid-layout {
+    .grid-2 .grid-layout,
+    .grid-3 .grid-layout,
+    .grid-3-alt .grid-layout,
+    .grid-4 .grid-layout {
         display: grid !important;
         grid-template-columns: 1fr 1fr !important;
         grid-template-rows: auto !important;
     }
 
-    .story-block.grid-3 .grid-layout>.photo-wrapper.middle {
+    /* Special case for the middle photo in 3-photo grid */
+    .grid-3 .grid-layout>.photo-wrapper.middle {
         grid-column: 1 / 3 !important;
         aspect-ratio: 16/9 !important;
-        max-height: 40vh !important;
+        max-height: 35vh !important;
     }
 
     .photo-wrapper {
