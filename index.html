@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С днем рождения, любимая ❤️</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Sparkles Container -->
+    <div id="sparkle-container"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <!-- 1. Change the main birthday title here -->
+            <h1 class="reveal-text">С днем рождения, моя дорогая ❤️</h1>
+            <p class="subtitle reveal-text">Ты — самое прекрасное, что случилось в моей жизни.</p>
+            <button id="start-journey" class="btn reveal-text">Открыть воспоминания</button>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Photo Story Section -->
+    <main class="story-container" id="story">
+
+        <!-- Group 1: Photo 1 -->
+        <section class="story-block single reveal">
+            <div class="photo-wrapper">
+                <img src="images/1.jpeg" alt="Memory 1" loading="lazy">
+            </div>
+            <div class="quote">
+                <p>Именно в этот момент я понял, что влюбился в твою ослепительную улыбку и затягивающие глаза.</p>
+            </div>
+        </section>
+
+        <!-- Group 2: Photos 2, 3 -->
+        <section class="story-block grid-2 reveal">
+            <div class="grid-layout">
+                <div class="photo-wrapper"><img src="images/2.jpeg" alt="Memory 2" loading="lazy"></div>
+                <div class="photo-wrapper"><img src="images/3.jpeg" alt="Memory 3" loading="lazy"></div>
+            </div>
+            <!-- 2. Replace quotes below -->
+            <div class="quote">
+                <p>Каждое мгновение с тобой — это маленькая сказка, которую я хочу перечитывать вечно.</p>
+            </div>
+        </section>
+
+        <!-- Group 3: Photos 4, 5, 6 -->
+        <section class="story-block grid-3 reveal">
+            <div class="grid-layout">
+                <div class="photo-wrapper"><img src="images/4.jpeg" alt="Memory 4" loading="lazy"></div>
+                <div class="photo-wrapper"><img src="images/5.jpeg" alt="Memory 5" loading="lazy"></div>
+                <div class="photo-wrapper middle"><img src="images/6.jpeg" alt="Memory 6" loading="lazy"></div>
+            </div>
+            <div class="quote">
+                <p>Твой смех — моя любимая музыка, а твои объятия — мой самый надежный дом.</p>
+            </div>
+        </section>
+
+        <!-- Group 4: Photos 7, 8, 9 -->
+        <section class="story-block grid-3-alt reveal">
+            <div class="grid-layout">
+                <div class="photo-wrapper"><img src="images/7.jpeg" alt="Memory 7" loading="lazy"></div>
+                <div class="photo-wrapper"><img src="images/8.jpeg" alt="Memory 8" loading="lazy"></div>
+                <div class="photo-wrapper"><img src="images/9.jpeg" alt="Memory 9" loading="lazy"></div>
+            </div>
+            <div class="quote">
+                <p>Мы создаем историю, которая с каждым днем становится всё прекраснее и глубже.</p>
+            </div>
+        </section>
+
+        <!-- Group 5: Photos 10, 11 -->
+        <section class="story-block grid-2 reveal">
+            <div class="grid-layout">
+                <div class="photo-wrapper"><img src="images/10.jpeg" alt="Memory 10" loading="lazy"></div>
+                <div class="photo-wrapper"><img src="images/11.jpeg" alt="Memory 11" loading="lazy"></div>
+            </div>
+            <div class="quote">
+                <p>Рядом с тобой я становлюсь лучшей версией себя. Спасибо за твою поддержку и веру.</p>
+            </div>
+        </section>
+
+        <!-- Group 6: Photos 12, 13, 14, 15 -->
+        <section class="story-block grid-4 reveal">
+            <div class="grid-layout">
+                <div class="photo-wrapper"><img src="images/12.jpeg" alt="Memory 12" loading="lazy"></div>
+                <div class="photo-wrapper"><img src="images/13.jpeg" alt="Memory 13" loading="lazy"></div>
+                <div class="photo-wrapper"><img src="images/14.jpeg" alt="Memory 14" loading="lazy"></div>
+                <div class="photo-wrapper"><img src="images/15.jpeg" alt="Memory 15" loading="lazy"></div>
+            </div>
+            <div class="quote">
+                <p>Мириады общих воспоминаний, которые согревают душу в самые холодные вечера.</p>
+            </div>
+        </section>
+
+        <!-- Group 7: Photo 16 -->
+        <section class="story-block single reveal">
+            <div class="photo-wrapper last">
+                <img src="images/16.jpeg" alt="Memory 16" loading="lazy">
+            </div>
+            <div class="quote">
+                <p>И это только начало нашего удивительного пути, полного любви и открытий.</p>
+            </div>
+        </section>
+
+        <!-- Group 8: Photos 17, 18 -->
+        <section class="story-block grid-2 reveal">
+            <div class="grid-layout">
+                <div class="photo-wrapper"><img src="images/17.jpeg" alt="Memory 17" loading="lazy"></div>
+                <div class="photo-wrapper"><img src="images/18.jpeg" alt="Memory 18" loading="lazy"></div>
+            </div>
+            <div class="quote">
+                <p>Твоё присутствие в моей жизни делает этот мир бесконечно прекраснее.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Final Message Section -->
+    <section class="final-message reveal">
+        <div class="message-card">
+            <div class="heart-icon">❤️</div>
+            <!-- 4. Add or change final message below -->
+            <h2>Моя бесконечная любовь</h2>
+            <p>Пусть этот день будет таким же ярким и неповторимым, как твоя душа. Я обещаю делать тебя счастливой
+                каждую секунду, оберегать твой покой и наполнять твою жизнь радостью. С днем рождения, моя жизнь, моё
+                вдохновение, моя единственная!</p>
+            <div class="signature">— Твой Жанка</div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
